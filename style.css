@@ -1,0 +1,587 @@
+
+
+/*header section*/
+
+* {
+	font-family:Arial, Helvetica, sans-serif;   
+}
+
+header {
+    width:100%;
+	height:100px;
+	margin-top:10px;
+	background-color:#000000a6;         
+}
+      
+header .index-logo {
+	font-family:Courier New;
+	text-decoration:none;
+	text-transform:uppercase; 
+	color:#ffffff;
+    text-shadow:1px 1px #000000a6;
+    font-size:35px;
+	font-weight:1000; 
+	font-style:italic;  
+	margin:32px;
+	float:left; 
+
+}
+header nav ul {
+	float:right; 
+	margin:40px 10px 0 10px; 
+}
+header nav ul li {
+	display:inline-block; 
+	text-decoration:none; 
+}
+header nav ul li a{
+	font-size:17px;
+	text-transform:uppercase;
+	color:#ffffff;
+	font-style:italic;
+	font-weight:bold;   
+	padding:5px 10px;
+	transition:0.5s ease;
+	text-decoration:none;      
+	    }
+header nav ul li a:hover {
+	color:#888;
+	text-decoration:underline;
+	  
+}
+.active {
+	color:#888; 
+    text-decoration:underline; 
+}
+
+.container {
+	width:100%;
+	text-align:center;
+	margin-top:40px;
+	      
+}
+ .container span {
+ 	text-transform:uppercase;
+ 	display:block;
+ }
+  .text1 { 
+  	color:black;
+    font-style:italic; 
+    font-size:20px;
+    font-weight:600;
+    text-shadow:1px 1px #c0f6fff7; 
+    letter-spacing:5px; 
+    margin-bottom:20px;   
+    animation: text 3s 1;
+
+ }
+ @keyframes text {
+ 	0% {
+ 		color:#ffffff;
+ 	}
+ 	30% {
+ 		letter-spacing:15px; 
+ 	}
+ 	85% {
+ 		letter-spacing:5px; 
+ 	}
+ }
+ .index-banner {
+   width:100%;
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("image/ashok.jpg"); 
+   height:500px; 
+   background-size:cover;
+   background-position:center;
+   background-repeat:no-repeat;
+   display:table;  
+
+ }
+ .front-banner {
+ 	display:table-cell;
+ 	vertical-align:middle; 
+ }
+ .front-banner h1 {
+    text-align:center;     
+	text-shadow:1px 1px #222; 
+	color:#ffffff;
+	font-weight:bold;
+	font-style:italic;    
+    line-height:40px;
+    font-size:40px;
+    text-transform:uppercase;          
+}
+ .front-banner h2 {  
+	text-align:center;
+	color:#ffffff;
+	font-size:20px;
+	line-height:25px; 
+	font-style:oblique; 
+	text-transform:uppercase;
+} 
+/*para and gallery section*/
+.sub-index {
+	width:100%;
+	background:linear-gradient(to left,#808080,#ffffff);
+	height:auto; 
+}
+	.container-box {
+		position:relative;
+		width:100%; 
+		height:auto;  
+		   }
+	.box-header h2 {
+		text-align:center;
+		padding-top:10px; 
+		text-transform:uppercase;
+		font-style:oblique;
+		font-weight:900;
+		text-shadow:1px 1px white;     
+	}
+    .container-box .box {
+		position:relative;
+		width:400px;
+		height:200px;
+		margin:30px;
+		height:calc(300px - 30px);
+		background-color:#111;
+		border-radius:9px; 
+		margin-left:auto;
+		margin-right:auto;  
+		overflow:hidden;    
+	}
+
+   .box img {
+   	width:100%; 
+   	height:calc(300px - 30px);
+   	border-radius:8px; 
+   	position:absolute; 
+   	top:50%;
+   	left:50%; 
+   	transform:translate(-50%,-50%);
+   	transition:1s; 
+   	border-radius:6px;   
+   }
+   .box:hover  img {
+   	width:100px;
+   	height:100px;
+   	cursor:pointer;
+   	top:60px;  
+}
+.content {
+	position:absolute; 
+	color:white;
+	padding:10px;
+	top:100%; 
+	box-sizing:border-box; 
+	text-align:center; 
+    transition:1s; 
+}
+   .box:hover .content  {
+  	top:150px; 
+  } 	
+/*footer section*/
+footer {
+	background-color:#000000a6;
+	width:calc(100% - 10px)
+	padding:5px 5px; 
+    margin-top:10px;
+    overflow:hidden; 
+}
+footer ul {
+	float:left;
+	width:fit-content; 
+}
+footer ul li {
+	padding:10px 10px 10px 0; 
+	list-style-type:none;
+	display:inline-block;   
+}
+footer ul li a {
+      color:#ffffff;
+      text-transform:uppercase;
+      font-size:17px; 
+      text-decoration:none;
+      font-style:italic;
+	  font-weight:bold;
+	  transition:0.5s ease; 
+   }
+footer ul li a:hover { 
+	text-decoration:underline;
+	color:#888;
+}
+.footer-image {
+	width:170px;
+	float:right;
+	margin-top:10px;
+	padding:0 15px 0 0;
+
+}
+.footer-image img {
+	width:18%;
+	height:auto; 
+	padding:10px;
+}
+.footer-image img:hover {
+	  animation:rotate 2s alternate;
+}
+ @keyframes rotate {
+  0% {
+      transform:translateY(0px); 
+  }
+  40% {
+    transform:translateY(0px) rotate(0deg); 
+  }
+ 
+  60% {
+    transform:translateY(0px) rotate(360deg); 
+  }
+  
+  100% {
+       transform:translateY(0px) rotate(360deg); 
+  }
+ }
+/*my gallery section*/ 
+
+.slider-page {
+	  background:linear-gradient(to left,black,white);
+	  width:100%;
+	  height:auto;  
+	  margin-top:10px 
+}    
+.slider-design {
+ 		overflow:hidden; 
+ 		width:51%;         		 
+ 	    margin-right:auto;
+ 	    margin-left:auto;  
+
+ 	}
+ 	.slider-design figure {
+ 		position:relative; 
+ 		width:500%;  
+ 		margin:0;
+ 		left:0;   
+ 		animation:15s slider infinite;     
+ 	}
+ 	.slider-design img {
+ 		width:20%; 
+ 		float:left;
+ 		height:auto;   
+ 	}
+ 	@keyframes slider{
+ 		0% {
+ 			left:0;
+ 		}
+ 		10% {
+ 			left:0;
+ 		}
+        20% {
+        	left:-100%;
+        }
+        30% {
+        	left:-100%;
+        }
+        40% {
+        	left:-200%;
+        }
+        50% {
+        	left:-200%;
+        }
+        60% {
+        	left:-300%;
+        }
+        70% {
+        	left:-300%;
+        }
+        80% {
+        	left:-400%;
+        }
+        90% {
+        	left:-400%;
+        }
+
+ 	}
+/*myself section*/
+.myself-page {
+	background:linear-gradient(to right,#ff2300,#0000ffd9);
+	width:100%;
+	height:500px;
+	margin-top:20px;   
+}
+.myself-design {
+	position:absolute; 
+    width:250px;
+    margin-top:220px;  
+    left:50%;
+    transform:translate(-50%);       
+}
+
+ .myself-design h1 {
+  width:100%;
+  text-shadow:0 5px 15px rgba(0,0,0,.3);
+  color:#ffffff;
+  font-size:25px;
+  font-style:italic; 
+  text-align:center;    
+ }
+  h1 span {
+   position:relative;
+   display:inline-block;
+ }
+
+ @keyframes animate {
+  0% {
+      transform:translateY(0px); 
+  }
+  40% {
+    transform:translateY(0px) rotate(0deg); 
+  }
+ 
+  60% {
+    transform:translateY(0px) rotate(360deg); 
+  }
+  
+  100% {
+       transform:translateY(0px) rotate(360deg); 
+  }
+ }
+  h1:hover  span {
+    animation:animate 3s alternate infinite;
+    color:#111;
+    transition:2s;
+    cursor:pointer;
+ }
+ h1 span:nth-child(1) {
+  animation-delay:0s; 
+ }
+ h1 span:nth-child(2) {
+  animation-delay:0.3s; 
+ }
+ h1 span:nth-child(3) {
+  animation-delay:0.6s; 
+ }
+ h1 span:nth-child(4) {
+  animation-delay:0.9s; 
+ }
+ h1 span:nth-child(5) {
+  animation-delay:1.2s; 
+ }
+ h1 span:nth-child(6) {
+  animation-delay:1.5s; 
+ }
+
+ h1 span:nth-child(7) {
+  animation-delay:1.8s; 
+ }
+ h1 span:nth-child(8) {
+  animation-delay:2.1s; 
+ }
+ h1 span:nth-child(9) {
+  animation-delay:2.4s; 
+ }
+h1 span:nth-child(10) {
+  animation-delay:2.7s; 
+ }
+
+h1 span:nth-child(11) {
+  animation-delay:3s; 
+ }
+ 
+ .myself-para {
+ 	width:100%;
+ 	height:auto;
+ 	margin-top:10px;      
+}
+ .myself-para h1 {
+ 	color:#111; 
+ 	font-size:20px;
+    text-align:center;
+    text-transform:uppercase;
+    text-shadow:1px 1px #222;   
+ }
+.myself-para p {
+	color:red;
+	font-size:20px;
+	font-style:italic;  
+	padding-left:15px;
+	text-transform:capitalize;   
+}
+/*logo section*/
+
+.logo-design { 
+		background:linear-gradient(to top,#ffffff,#000000);
+		width:100%;
+		height:100%;  
+	}
+	.logo-design1 {
+		position:absolute;
+		width:300px;
+		height:400px; 
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);      
+	}
+	.logo-design2 {
+		position:absolute;
+		width:100%;
+		height:100%;
+		transform-style:preserve-3d; 
+		transition:all 0.5s ease;      
+	}
+	.logo-design2:hover {
+		transform:rotateY(180deg); 
+		cursor:pointer; 
+
+	}
+	.logo-design3 {
+		position:absolute;
+		width:100%;
+		height:100%;
+		backface-visibility:hidden;
+		background:linear-gradient(to top,#ff0000,#000000);
+		border-radius:20px; 
+		display:table;     
+		 
+	}
+	.logo-design3 h1 {
+        text-align:center; 
+        margin-top:180px;  
+        color:#ffffff;
+         font-size:18px;
+         line-height:20px; 
+        text-transform:uppercase; 
+	}
+	.logo-design4 {
+		position:absolute;
+		width:100%;
+		height:100%;
+		border-radius:20px;
+		backface-visibility:hidden;
+		background:linear-gradient(to top,black,red);  
+		transform:rotateY(180deg); 
+	}
+	.logo-design4 h2 {
+         text-align:center;
+         color:white; 
+         font-size:18px;
+         line-height:20px;  
+         margin-top:180px;
+         text-transform:uppercase;  
+	}
+/*meadia querie section*/
+  
+/*header section*/
+@media only screen and (max-width:630px) {
+ 
+ header .index-logo {
+    font-size:25px;
+	display:block;
+	text-align:center; 
+	margin:0 auto;
+	width:100%;
+ }
+
+ header nav ul {
+    width:100%;
+	margin:25px 0;  
+	display:block; 
+    text-align:center; 
+}
+
+header nav ul li a {
+     font-size:15px;  
+   }  
+     .text1 { 
+  font-size:15px;
+ }
+.index-banner { 
+   height:calc(100vh - 100px); 
+ }
+
+.front-banner h3 span {
+     margin:3px;  
+    font-size:30px;
+        
+}
+.front-banner h4 {
+	font-size:18px;
+	line-height:30px;  
+} 
+}
+
+/*para and gallery section*/
+@media only screen and (max-width:500px) {
+ 
+   .container-box .box {
+		width:200px;
+		height:200px;
+	}
+	 .box img {
+   	width:100%; 
+   	height:200px;   
+   }
+   .box:hover  img {
+   	top:40px;
+   	width:70px;
+   	height:70px;   
+}
+  .content {
+  	font-size:14; 
+    padding:0;
+  }
+
+   .box:hover .content  {
+  	top:80px;
+  } 	
+}
+/*footer section*/
+@media only screen and (max-width:750px)  {
+ 
+footer ul li { 
+    display:block;
+    padding:15px 0; 
+}
+footer ul li a {
+      color:white;
+      font-size:15px;  
+
+}
+.footer-image {
+	width:33px;
+	float:right;
+	margin-right:20px;  
+}
+
+.footer-image img {
+	width:100%;
+
+}
+}
+
+/*logo section*/
+@media only screen and (max-width:320px) {
+	.logo-design1 {
+		width:150px;       
+	}
+	.logo-design3 h1 {
+         font-size:16px;
+	}
+	
+	.logo-design4 h2 {
+         font-size:15px;
+	}
+}
+/*myself section*/
+@media only screen and (max-width:400px) {
+  
+  .myself-design h1 {
+  font-size:20px;    
+ }
+
+ .myself-para p {
+    font-size:18px; 
+  }
+ }
+
+
+
+
